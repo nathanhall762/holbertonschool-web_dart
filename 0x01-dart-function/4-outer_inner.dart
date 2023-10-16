@@ -1,6 +1,10 @@
 void outer(String name, String id) {
   String inner() {
-    return "Hello, my name is $name and my id is $id";
+    String firstInitial = name[0];
+    List<String> nameList = name.split(" ");
+    String lastName = nameList[1];
+    return "Hello Agent $firstInitial.$lastName your id is $id";
   }
+
   print(inner());
 }
