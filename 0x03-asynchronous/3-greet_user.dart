@@ -3,7 +3,7 @@ import 'dart:convert';
 
 greetUser() async {
   try {
-  return 'hello ${json.decode(await fetchUserData())['username']}';
+  return 'Hello ${json.decode(await fetchUserData())['username']}';
   } catch (err) {
     print('error caught: $err');
   }
